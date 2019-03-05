@@ -210,7 +210,5 @@ $ rake run_example
 The above commands will build the example to a docker image, and run it. You can run `$ rake rm_example` to delete the image afterward.
 
 ## Copyright
-
-* Copyright(c) 2018- Zhimin (Gimi) Liang (https://github.com/Gimi)
 * License
   * Apache License, Version 2.0
