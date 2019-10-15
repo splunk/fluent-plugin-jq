@@ -3,13 +3,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name    = "fluent-plugin-jq"
-  spec.version = "0.5.1"
-  spec.authors = ["Zhimin (Gimi) Liang"]
-  spec.email   = ["liang.gimi@gmail.com"]
+  spec.version = File.read('VERSION')
+  spec.authors       = ['Splunk Inc.']
+  spec.email         = ['DataEdge@splunk.com']
 
   spec.summary       = %q{Fluentd plugins uses the jq engine.}
   spec.description   = %q{fluent-plungin-jq is a collection of fluentd plugins which uses the jq engine to transform or format fluentd events.}
-  spec.homepage      = "https://github.com/Gimi/fluent-plugin-jq"
+  spec.homepage      = "https://github.com/splunk/fluent-plugin-jq"
   spec.license       = "Apache-2.0"
 
   spec.files         = Dir.glob('*').select { |f| not (File.directory?(f) || f.start_with?('.')) } +
